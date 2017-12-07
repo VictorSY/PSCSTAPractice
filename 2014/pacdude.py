@@ -85,3 +85,4 @@ with open('student_data/pacdude.dat', 'r') as file:
         print()
         solve_maze(maze, O_position, X_position)
 
+#https://github.com/neilzxu/pscstawinter2014/blob/master/src/pscstawinter2014/PacDude.java
