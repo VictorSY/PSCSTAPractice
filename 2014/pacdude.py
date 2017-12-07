@@ -7,7 +7,6 @@ def test_if_possible(maze, new_position, past_positions):
     if maze_position is "#":
         return False
     if new_position in past_positions[len(past_positions)-3-1:]:
-        print(past_positions)
         return False
     '''if new_position in past_positions:
         return False'''
@@ -52,8 +51,7 @@ def solve_maze(maze, current_position, fruit):
     while current_position != fruit:
         current_position, direction = decide_where_to_go(maze, current_position, past_positions, direction)
         if current_position is past_positions[-1]:
-            del past_positions[-2]
-            del past_positions[-2]
+            break
 
         past_positions.append(current_position)
     print("Done")
